@@ -6,6 +6,5 @@
   display: grid;
   gap: 20px;
   border: 10px solid #356;
-  grid-template-columns: repeat(auto-fit, 150px);
-  /* grid-template-rows: repeat(3, 150px); */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
