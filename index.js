@@ -14,6 +14,10 @@ class Person {
     user: false,
   };
 
+  static isLegal(age) {
+    return age >= 18;
+  }
+
   get getmail() {
     return this.#email;
   }
@@ -32,5 +36,6 @@ console.log(kevin.getmail);
 kevin.setEmail = "It";
 console.log(kevin.getmail);
 console.log(Person.rights.admin);
+console.log("Is legal work: ", Person.isLegal(kevin.age));
 
 kevin.setShowAge();
