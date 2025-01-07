@@ -9,6 +9,11 @@ class Person {
     this.#email = email;
   }
 
+  static rights = {
+    admin: true,
+    user: false,
+  };
+
   get getmail() {
     return this.#email;
   }
@@ -26,5 +31,6 @@ const kevin = new Person("Kevin", 25, "kevin@mail.com");
 console.log(kevin.getmail);
 kevin.setEmail = "It";
 console.log(kevin.getmail);
+console.log(Person.rights.admin);
 
 kevin.setShowAge();
