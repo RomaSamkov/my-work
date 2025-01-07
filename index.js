@@ -37,5 +37,3 @@ kevin.setEmail = "It";
 console.log(kevin.getmail);
 console.log(Person.rights.admin);
 console.log("Is legal work: ", Person.isLegal(kevin.age));
-
-kevin.setShowAge();
