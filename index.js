@@ -32,8 +32,22 @@ class Person {
 }
 
 const kevin = new Person("Kevin", 25, "kevin@mail.com");
-console.log(kevin.getmail);
-kevin.setEmail = "It";
-console.log(kevin.getmail);
-console.log(Person.rights.admin);
-console.log("Is legal work: ", Person.isLegal(kevin.age));
+
+class User extends Person {
+  constructor(name, age, email, fruit) {
+    super(name, age, email);
+    this.fruit = fruit;
+    this.isValidUser = false;
+  }
+
+  checkIsValidUser() {
+    this.isValidUser = this.name !== "" && this.getmail !== "";
+    if (this.isValidUser) {
+      console.log("User is valid ))");
+    }
+  }
+}
+
+const minion = new User("Kevin", 25, "kevin@mail.com", "banana");
+minion.checkIsValidUser();
+console.log(minion);
