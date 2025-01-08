@@ -9,6 +9,15 @@ function outerFunction(outerVariables) {
 
   return innerFunction;
 }
-
+// create closure
 const closure = outerFunction("Outer Value");
 closure("Inner Value");
+
+function addNumber(a) {
+  return function addNumberB(b) {
+    console.log(a + b);
+  };
+}
+
+const closureAdd = addNumber(5);
+closureAdd(10);
