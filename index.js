@@ -16,8 +16,8 @@ closure("Inner Value");
 function addNumber(a) {
   return function addNumberB(b) {
     console.log(a + b);
-    console.log("a", a);
-    console.log("b", b);
+    console.log("a: ", a);
+    console.log("b: ", b);
   };
 }
 
