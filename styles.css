@@ -6,35 +6,16 @@
   display: grid;
   gap: 20px;
   border: 10px solid #356;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 150px);
   grid-template-rows: repeat(3, 150px);
-  grid-template-areas:
-    "header header header header"
-    "main main . sidebar"
-    "footer footer footer footer";
+  height: 600px;
+  /* justify-items: stretch; */
+  /* align-items: stretch; */
+  /* justify-content: center; */
+  align-content: space-evenly;
 }
 
-.header {
-  grid-area: header;
-}
-
-.main {
-  grid-area: main;
-}
-
-.sidebar {
-  grid-area: sidebar;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-@media (max-width: 700px) {
-  .container {
-    grid-template-areas:
-      "sidebar header header header"
-      "sidebar main main main"
-      "sidebar footer footer footer";
-  }
+.item-4 {
+  justify-self: stretch;
+  align-self: stretch;
 }
