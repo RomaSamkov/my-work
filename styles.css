@@ -108,11 +108,9 @@
   .blog {
     grid-area: b;
   }
-
   .socials {
     grid-area: s;
   }
-
   .video {
     grid-area: v;
   }
